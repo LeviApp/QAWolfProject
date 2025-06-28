@@ -8,6 +8,8 @@ async function sortHackerNewsArticles() {
   const page = await context.newPage();
 
   // go to Hacker News
+  console.log({ page })
+  
   await page.goto("https://news.ycombinator.com/newest");
 }
 
